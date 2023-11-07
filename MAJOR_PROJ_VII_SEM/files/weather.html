@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>WEATHER APP</title>
     <link rel="stylesheet" href="weather.css">
 </head>
 <body>
-    <div class="header">
-        <h1>WEATHER APP</h1>
-        <div>
-            <input type="text" name="" id="input" placeholder="Enter city name">
-            <button id="search" onclick="searchByCity()">Predict</button>
-            <a id="search" href="https://gourboy.github.io/MINOR_PROJECT_VI_SEM/php/index.html">Rent Equipments</a>
-        </input>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- <img src="img/logo3.png"  width="250" height="150"> -->
+          <a class="navbar-brand" href="about.php"><h2><b><i>WEATHER APP</i></b></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Services_">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About_us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact</a>
+              </li>
+             
+              
+            </ul>
+            <div class="header">
+                <div>
+                    <input type="text" name="" id="input" placeholder="Enter city name">
+                    <button id="search" onclick="searchByCity()">Predict</button>
+                    <a id="search" href="https://gourboy.github.io/MINOR_PROJECT_VI_SEM/php/index.html">Rent Equipments</a>
+                </input>
+                </div>
+            </div>
+          </div>
         </div>
-    </div>
-
+      </nav>
+    
     <main>        
         <div class="weather">
             <h2 id="city">Delhi,IN</h2>
@@ -31,7 +58,8 @@
         <div class="divider1"></div>
 
         <div class="forecstH">
-            <p class="cast-header">Upcoming forecast</p>
+            <br>
+           <center> <p class="cast-header">Upcoming forecast</p></center>
             <div class="templist">
 
                 <div class="next">
